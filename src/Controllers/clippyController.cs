@@ -27,6 +27,8 @@ namespace clippyAPI.Controllers
                 }
                 string output = $" {top}\n< {text} >\n {bottom}\n \\\n  \\\n    __\n   /  \\\n   |  |\n   @  @\n   |  |\n   || |/\n   || ||\n   |\\_/|\n   \\___/ ";
 
+                output += $"\n From: {System.Runtime.InteropServices.RuntimeInformation.OSDescription}\n";
+
                 return output;
             }
         }
